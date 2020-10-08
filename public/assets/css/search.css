@@ -1,0 +1,29 @@
+.form-control {
+    border-radius: 5px !important;
+    margin-top: 10px;
+    height: 3rem;
+}
+
+.btn {
+    margin-top: 10px;
+}
+
+.col-lg-5 {
+    border-right: 1px solid lightgray;
+}
+
+.table-wrapper {
+    min-width: unset !important;
+}
+
+h4 {
+    padding-top: 15px;
+}
+
+.table {
+    margin-top: 17px;
+}
+
+tr td {
+    text-align: center;
+}
