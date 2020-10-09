@@ -29,18 +29,6 @@ class RoleUserSeeder extends Seeder
                 'updated_at' => \Carbon\Carbon::now()
             ),
             array(
-                'user_id' => '1',
-                'role_id' => '2',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-            ),
-            array(
-                'user_id' => '2',
-                'role_id' => '1',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-            ),
-            array(
                 'user_id' => '2',
                 'role_id' => '2',
                 'created_at' => \Carbon\Carbon::now(),
@@ -48,18 +36,6 @@ class RoleUserSeeder extends Seeder
             ),
             array(
                 'user_id' => '3',
-                'role_id' => '1',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-            ),
-            array(
-                'user_id' => '3',
-                'role_id' => '2',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-            ),
-            array(
-                'user_id' => '4',
                 'role_id' => '1',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
@@ -73,12 +49,6 @@ class RoleUserSeeder extends Seeder
             array(
                 'user_id' => '5',
                 'role_id' => '1',
-                'created_at' => \Carbon\Carbon::now(),
-                'updated_at' => \Carbon\Carbon::now()
-            ),
-            array(
-                'user_id' => '5',
-                'role_id' => '2',
                 'created_at' => \Carbon\Carbon::now(),
                 'updated_at' => \Carbon\Carbon::now()
             ),

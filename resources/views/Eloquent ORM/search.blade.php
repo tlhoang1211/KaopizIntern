@@ -1,7 +1,9 @@
 @extends('Query Builder Exercise.layouts.blog')
 
 @push('script')
+    <script type="text/javascript">
 
+    </script>
 @endpush
 
 @push('style')
@@ -19,17 +21,22 @@
                 <form action="{{route('search.result')}}" method="get" role="search">
                     @csrf
                     <div class="input-group">
-                        <input type="text" class="form-control" name="id"
-                               placeholder="User ID">
-                        <input type="text" class="form-control" name="name"
-                               placeholder="User Name">
-                        <input type="text" class="form-control" name="class"
-                               placeholder="User Class">
-                        <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary" style="width: 100px">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </span>
+                        <input id="id" type="text" class="form-control" name="id"
+                               placeholder="User ID" autocomplete="off">
+                        <input id="name" type="text" class="form-control" name="name"
+                               placeholder="User Name" autocomplete="off">
+                        <input id="class" type="text" class="form-control" name="class"
+                               placeholder="User Class" autocomplete="off">
+                        <div class="input-group-btn">
+                            <button type="submit" class="btn btn-primary" style="width: 100px">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div class="input-group-btn" style="margin-left: 10px">
+                            <button type="submit" id="reset" class="btn btn-primary" style="width: 100px">
+                                <i class="fas fa-undo-alt"></i>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>

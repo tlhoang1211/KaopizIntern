@@ -1,7 +1,6 @@
 @extends('Query Builder Exercise.layouts.blog')
 
 @push('script')
-
 @endpush
 
 @push('style')
@@ -19,17 +18,22 @@
                 <form action="{{route('search.advance.result')}}" method="get" role="search">
                     @csrf
                     <div class="input-group">
-                        <input type="text" class="form-control" name="id"
-                               placeholder="User ID">
-                        <input type="text" class="form-control" name="phonenumber"
-                               placeholder="User Phone Number">
-                        <input type="text" class="form-control" name="name"
-                               placeholder="User Name">
-                        <span class="input-group-btn">
-                        <button type="submit" class="btn btn-primary" style="width: 100px">
-                            <i class="fas fa-search"></i>
-                        </button>
-                    </span>
+                        <input id="id" type="text" class="form-control" name="id"
+                               placeholder="User ID" autocomplete="off" value="">
+                        <input id="name" type="text" class="form-control" name="name"
+                               placeholder="User Name" autocomplete="off">
+                        <input id="phonenumber" type="text" class="form-control" name="phonenumber"
+                               placeholder="User Phone Number" autocomplete="off">
+                        <div>
+                            <button type="submit" class="btn btn-primary" style="width: 100px">
+                                <i class="fas fa-search"></i>
+                            </button>
+                        </div>
+                        <div style="margin-left: 10px">
+                            <button type="submit" id="reset" class="btn btn-primary" style="width: 100px">
+                                <i class="fas fa-undo-alt"></i>
+                            </button>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -51,13 +55,14 @@
                             <p style="color: red">Sorry, there is no data that meets your requirements!</p>
                         @else
                             @foreach($adv_data as $user)
-                                <tr>
-                                    <td>{{$user->id}}</td>
-                                    <td>{{$user->first_name . " " . $user->last_name}}</td>
-                                    <td>{{$user->phones->number}}</td>
-                                    {{dd($user->roles)}}
-                                    <td>{{$user->roles}}</td>
-                                </tr>
+                                @foreach($user->roles as $role)
+                                    <tr>
+                                        <td>{{$user->id}}</td>
+                                        <td>{{$user->first_name . ' ' .$user->last_name}}</td>
+                                        <td>{{$user->phones->number}}</td>
+                                        <td>{{$role->role_name}}</td>
+                                    </tr>
+                                @endforeach
                             @endforeach
                         @endif
                     @endif

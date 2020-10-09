@@ -20,8 +20,8 @@
                     "closeButton": false,
                     "debug": true,
                     "newestOnTop": true,
-                    "progressBar": false,
-                    "positionClass": "toast-top-right",
+                    "progressBar": true,
+                    "positionClass": "toast-top-center",
                     "preventDuplicates": false,
                     "onclick": null,
                     "showDuration": "300",
@@ -44,8 +44,8 @@
                     "closeButton": false,
                     "debug": true,
                     "newestOnTop": true,
-                    "progressBar": false,
-                    "positionClass": "toast-top-right",
+                    "progressBar": true,
+                    "positionClass": "toast-top-center",
                     "preventDuplicates": true,
                     "onclick": null,
                     "showDuration": "300",
@@ -71,7 +71,7 @@
                     "debug": false,
                     "newestOnTop": true,
                     "progressBar": true,
-                    "positionClass": "toast-top-right",
+                    "positionClass": "toast-top-center",
                     "preventDuplicates": true,
                     "onclick": null,
                     "showDuration": "300",
@@ -97,7 +97,7 @@
                     "debug": false,
                     "newestOnTop": true,
                     "progressBar": true,
-                    "positionClass": "toast-top-right",
+                    "positionClass": "toast-top-center",
                     "preventDuplicates": true,
                     "onclick": null,
                     "showDuration": "300",
@@ -244,11 +244,8 @@
                                         <div class="form-group">
                                             <label for="message-text" class="col-form-label">Comment:</label>
                                             <textarea class="form-control" id="message-text" readonly rows="10"
-                                                      placeholder="
-                                                      @foreach($comments as $cmt)
-                                                      @if($post->id === $cmt->post_id)
-                                                          - {{$cmt->content_comment}}
-                                                      @endif
+                                                      placeholder="@foreach($comments as $cmt)
+                                                      @if($post->id === $cmt->post_id){!! '&#10;- ' . $cmt->content_comment !!} @endif
                                                       @endforeach"
                                                       spellcheck="false"></textarea>
                                         </div>
