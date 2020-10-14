@@ -1,4 +1,4 @@
-@extends('View Blade Exercise.layouts.app')
+@extends('view_blade.layouts.app')
 
 @push('script')
 @endpush

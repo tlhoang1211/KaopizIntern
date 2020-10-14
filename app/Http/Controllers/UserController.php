@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\User;
+use App\Models\Customer;
 use App\Traits\Filterable;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
@@ -13,14 +13,14 @@ class UserController extends Controller
 
     public function index()
     {
-        $data = DB::table('users')->paginate(5);
-        return view('Eloquent ORM.search', compact('data'));
+        $data = DB::table('customers')->paginate(5);
+        return view('eloquent_orm.search', compact('data'));
     }
 
     public function search(Request $request)
     {
-        $data = User::filter($request)->orderBy('id', 'desc')->paginate(5);
-        return view('Eloquent ORM.search', compact('data'));
+        $data = Customer::filter($request)->orderBy('id', 'desc')->paginate(5);
+        return view('eloquent_orm.search', compact('data'));
     }
 }
 

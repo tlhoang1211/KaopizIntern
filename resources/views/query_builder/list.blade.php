@@ -1,4 +1,4 @@
-@extends('Query Builder Exercise.layouts.blog')
+@extends('query_builder.layouts.blog')
 
 @push('script')
     <script src="//cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
@@ -132,7 +132,7 @@
             <div class="col-sm-2">
                 {{--                                                <div class="search-box">--}}
                 {{--                                                    <i class="material-icons">&#xE8B6;</i>--}}
-                {{--                                                    <input type="text" class="form-control" placeholder="Search&hellip;">--}}
+                {{--                                                    <input type="text" class="form-control" placeholder="Customer&hellip;">--}}
                 {{--                                                </div>--}}
                 <button type="button" class="create_btn"
                         title="new"

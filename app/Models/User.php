@@ -2,34 +2,13 @@
 
 namespace App\Models;
 
-use App\Traits\Filterable;
-use Illuminate\Database\Eloquent\Factories\HasFactory;
-use Illuminate\Database\Eloquent\Model;
+use Illuminate\Foundation\Auth\User as Authenticatable;
+use Illuminate\Notifications\Notifiable;
 use Laravel\Passport\HasApiTokens;
 
-class User extends Model
+class User extends Authenticatable
 {
-    use HasFactory;
-    use Filterable;
+    use Notifiable, HasApiTokens;
 
-    protected $fillable = ['name', 'class'];
-
-    protected $user = 'users';
-
-    public function filterID($query, $value)
-    {
-        return $query->where('id', $value);
-    }
-
-    public function filterName($query, $value)
-    {
-        return $query->where('name', 'LIKE', '%' . $value . '%');
-    }
-
-    public function filterClass($query, $value)
-    {
-        return $query->where('class', 'LIKE', '%' . $value . '%');
-    }
+    protected $fillable = ['name', 'email', 'password'];
 }
-
-

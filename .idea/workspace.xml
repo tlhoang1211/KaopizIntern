@@ -3,14 +3,57 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="f6329963-7899-46a1-8f05-25f14b9375ce" name="Default Changelist" comment="" />
+    <list default="true" id="f6329963-7899-46a1-8f05-25f14b9375ce" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/AdvanceUserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/AdvanceUserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/PostController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/UserController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Kernel.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Kernel.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Middleware/HeaderToken.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Middleware/HeaderToken.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Customer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Providers/AuthServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/factories/UserFactory.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/factories/UserFactory.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2020_10_07_172122_create_users_table.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/DatabaseSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeders/UserSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeders/CustomerSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Eloquent ORM/advance_search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/eloquent_orm/advance_search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Eloquent ORM/search.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/eloquent_orm/search.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Query Builder Exercise/layouts/blog.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/query_builder/layouts/blog.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/Query Builder Exercise/list.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/query_builder/list.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/View Blade Exercise/content.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_blade/content.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/View Blade Exercise/layouts/app.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_blade/layouts/app.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/View Blade Exercise/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_blade/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/View Blade Exercise/layouts/heading.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/view_blade/layouts/heading.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/api.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/channels.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/channels.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
@@ -20,6 +63,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -146,12 +192,16 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1iWxGSla58eFHAAQMCDBGjQp8Ab" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
     <option name="showMembers" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -187,26 +237,41 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1602037053405</updated>
-      <workItem from="1602037054555" duration="89221000" />
+      <workItem from="1602037054555" duration="92906000" />
+      <workItem from="1602257571645" duration="149000" />
+      <workItem from="1602560778392" duration="6030000" />
+      <workItem from="1602655933025" duration="5240000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="634" y="424" key="#Composer" timestamp="1602037125105">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state x="634" y="424" key="#Composer/0.23.1680.1027@0.23.1680.1027" timestamp="1602037125105" />
-    <state x="593" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602132226854">
+    <state x="593" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1602659253687">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="593" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602132226854" />
-    <state x="158" y="298" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602209850010">
+    <state x="593" y="23" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602659253687" />
+    <state x="158" y="298" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1602227201408">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="158" y="298" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602209850010" />
+    <state x="158" y="298" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602227201408" />
     <state x="646" y="462" key="Github.CreateGistDialog" timestamp="1602154329680">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
@@ -227,13 +292,17 @@
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
     <state width="798" height="280" key="GridCell.Tab.0.right/0.23.1680.1027@0.23.1680.1027" timestamp="1602039821264" />
-    <state x="659" y="467" key="NewPhpFileDialog" timestamp="1602138803582">
+    <state x="482" y="269" key="NewPhpClassDialog" timestamp="1602561617290">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="659" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602138803582" />
-    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602147493374">
+    <state x="482" y="269" key="NewPhpClassDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602561617290" />
+    <state x="659" y="467" key="NewPhpFileDialog" timestamp="1602646817787">
       <screen x="0" y="23" width="1680" height="1027" />
     </state>
-    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1602147493374" />
+    <state x="659" y="467" key="NewPhpFileDialog/0.23.1680.1027@0.23.1680.1027" timestamp="1602646817787" />
+    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup" timestamp="1602647150795">
+      <screen x="0" y="23" width="1680" height="1027" />
+    </state>
+    <state x="85" y="250" width="670" height="676" key="search.everywhere.popup/0.23.1680.1027@0.23.1680.1027" timestamp="1602647150795" />
   </component>
 </project>

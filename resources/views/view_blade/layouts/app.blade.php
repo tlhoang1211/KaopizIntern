@@ -11,7 +11,7 @@
     @stack('style')
 </head>
 <body>
-@include('View Blade Exercise.layouts.heading')
+@include('view_blade.layouts.heading')
 
 <div class="container" style="margin-top:30px">
     @yield('content')
@@ -20,6 +20,6 @@
 @stack('script')
 </body>
 <footer>
-    @include('View Blade Exercise.layouts.footer')
+    @include('view_blade.layouts.footer')
 </footer>
 </html>

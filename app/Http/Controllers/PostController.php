@@ -15,7 +15,7 @@ class PostController extends Controller
         $comments = Comment::query()->get();
 //        dd($comments);
         $posts = $posts->where('status', '=', 1)->orderBy('id', 'desc')->paginate(5);
-        return view('Query Builder Exercise.list', compact('posts', 'comments'));
+        return view('query_builder.list', compact('posts', 'comments'));
     }
 
     public function store(Request $request)
@@ -61,7 +61,7 @@ class PostController extends Controller
             $post->update();
             return redirect(route('posts_list'))->with('update_success', 'Update Successful!');
         }
-        return view('Query Builder Exercise.list')->with('error', 'Something wrong!');
+        return view('query_builder.list')->with('error', 'Something wrong!');
     }
 
 
@@ -73,8 +73,7 @@ class PostController extends Controller
             $post->update();
             return redirect(route('posts_list'))->with('delete_success', 'Delete Successful!');
         }
-        return view('Query Builder Exercise.list')->with('error', 'Something wrong!');
-
+        return view('query_builder.list')->with('error', 'Something wrong!');
     }
 }
 

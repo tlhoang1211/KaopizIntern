@@ -22,7 +22,7 @@ Route::get('/', function () {
 
 //View blade
 Route::get('/view-blade', function () {
-    return view('View Blade Exercise.content');
+    return view('view_blade.content');
 });
 
 //Query_Builder
@@ -37,7 +37,7 @@ Route::get('/404', function () {
     return view('404');
 });
 
-//Eloquent ORM
+//eloquent_orm
 Route::get('/search-user', [UserController::class, 'index'])->name('search.index');
 
 Route::get('/search-results', [UserController::class, 'search'])->name('search.result');

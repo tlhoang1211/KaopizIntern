@@ -13,7 +13,7 @@ class AdvanceUserController extends Controller
     public function index()
     {
         $adv_data = AdvanceUser::query()->paginate(5);
-        return view('Eloquent ORM.advance_search', compact('adv_data'));
+        return view('eloquent_orm.advance_search', compact('adv_data'));
     }
 
     public function search_advance(Request $request)
@@ -22,6 +22,6 @@ class AdvanceUserController extends Controller
             ->join('phones', 'advance_users.id', '=', 'phones.user_id')
             ->select('*', 'phones.number')
             ->orderBy('advance_users.id', 'asc')->paginate(5);
-        return view('Eloquent ORM.advance_search', compact('adv_data'));
+        return view('eloquent_orm.advance_search', compact('adv_data'));
     }
 }

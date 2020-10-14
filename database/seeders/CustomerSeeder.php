@@ -2,12 +2,11 @@
 
 namespace Database\Seeders;
 
-use App\Models\Post;
-use App\Models\User;
+use App\Models\Customer;
 use Illuminate\Database\Seeder;
 use Illuminate\Support\Facades\Schema;
 
-class UserSeeder extends Seeder
+class CustomerSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -16,10 +15,10 @@ class UserSeeder extends Seeder
      */
     public function run()
     {
-        $data_check = User::all()->first();
+        $data_check = Customer::all()->first();
         if ($data_check != null) {
             Schema::disableForeignKeyConstraints();
-            User::query()->truncate();
+            Customer::query()->truncate();
             Schema::enableForeignKeyConstraints();
         }
         $users = array(
@@ -85,6 +84,6 @@ class UserSeeder extends Seeder
             ),
         );
 
-        User::insert($users);
+        Customer::insert($users);
     }
 }
